@@ -1,6 +1,6 @@
 {
   "name": "@cloakwp/blocks-nextjs",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Extends some components from @cloakwp/blocks-react to leverage Next.js built-in components.",
   "main": "dist/index",
   "types": "dist/index.d.ts",
