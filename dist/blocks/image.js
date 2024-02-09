@@ -1,10 +1,7 @@
-import { BlocksConfig } from "cloakwp";
 import { imageDataRouter } from "@cloakwp/block-data-routers";
 import { Image } from "@cloakui/nextjs-primitives";
-
-export const CoreBlocksConfig: BlocksConfig = {
-  "core/image": {
+import { configurableBlockPreset } from "@cloakwp/blocks-react";
+export const image = configurableBlockPreset("core/image", {
     dataRouter: imageDataRouter,
     component: Image,
-  },
-};
+});
