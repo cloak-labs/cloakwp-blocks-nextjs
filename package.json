@@ -54,9 +54,9 @@
   },
   "peerDependencies": {
     "@cloakui/nextjs-primitives": ">= 0.1.1",
-    "@cloakwp/block-data-routers": ">= 0.1.1",
-    "@cloakwp/blocks-react": ">= 0.3.2",
-    "cloakwp": ">= 0.6.3",
+    "@cloakwp/block-data-routers": ">= 0.1.4",
+    "@cloakwp/blocks-react": ">= 0.3.6",
+    "cloakwp": ">= 0.6.8",
     "next": ">= 12.3"
   },
   "publishConfig": {
