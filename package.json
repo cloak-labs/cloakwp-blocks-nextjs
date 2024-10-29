@@ -17,11 +17,11 @@
     }
   },
   "scripts": {
-    "dev": "tsc -p tsconfig.json -w",
+    "dev": "tsc -p tsconfig.json -w --preserveWatchOutput",
     "build": "npm run build-ts",
-    "build-ts": "tsc-silent -p tsconfig.json --suppress",
-    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
-    "zzz-postpublish": "git push && git push --tags"
+    "build-ts": "tsc-silent -p tsconfig.json --suppress @",
+    "clean": "rm -rf .turbo && rm -rf dist && npm run clean:modules",
+    "clean:modules": "rm -rf node_modules"
   },
   "repository": {
     "type": "git",
@@ -47,14 +47,12 @@
   "homepage": "https://github.com/cloak-labs/cloakwp-core-blocks-nextjs#readme",
   "devDependencies": {
     "@types/node": "^18.18.1",
-    "@types/react": "18.2.37",
-    "@types/react-dom": "^18.2.8",
     "tsc-watch": "^5.0.3",
     "typescript": "^5.3.2"
   },
   "peerDependencies": {
     "@cloakui/nextjs-primitives": ">= 0.1.1",
-    "@cloakwp/block-data-routers": ">= 0.1.4",
+    "@cloakwp/block-data-routers": ">= 0.1.x",
     "@cloakwp/blocks-react": ">= 0.3.6",
     "cloakwp": ">= 0.6.8",
     "next": ">= 12.3"
