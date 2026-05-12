@@ -7,3 +7,4 @@ export declare const image: (userOverrides?: {
         [x: string]: any;
     };
 }) => import("@cloakwp/react").WPBlocksConfigReact;
+//# sourceMappingURL=image.d.ts.map
